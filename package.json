@@ -1,5 +1,6 @@
 {
   "name": "business-owner",
+  "homepage": "https://Laxmi2207.github.io/OnlineTaddy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "@mui/styles": "^5.15.6",
     "@reduxjs/toolkit": "^2.0.0",
     "cra-template": "1.2.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
@@ -24,6 +26,8 @@
     "styled-components": "^6.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
